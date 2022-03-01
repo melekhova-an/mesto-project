@@ -1,0 +1,11 @@
+.gallery__button_like{
+  width: 22px;
+  height: 19px;
+  margin: 30px auto;
+  
+  }
+
+.gallery__button_like:hover{
+  opacity: .5;
+}
+  

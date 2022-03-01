@@ -1,0 +1,23 @@
+.gallery__elements{
+  list-style-type: none; 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: space-around;
+  margin: 0px auto;
+}
+
+
+@media screen and (min-width: 320px)  {
+  .gallery__elements {
+    min-width: 282px;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .gallery__elements {
+    width: 895px;
+    
+  }
+}
+
