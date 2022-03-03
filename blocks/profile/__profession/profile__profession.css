@@ -1,18 +1,22 @@
 .profile__profession {
     font-style: normal;
     font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 320px)  {
+@media screen and (min-width: 320px) {
     .profile__profession {
         font-size: 14px;
         line-height: 17px;
+        margin: 0px auto;
     }
-  }
-  
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 1024px) {
     .profile__profession {
         font-size: 18px;
         line-height: 22px;
     }
-  }
+}

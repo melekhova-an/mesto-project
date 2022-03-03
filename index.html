@@ -12,15 +12,15 @@
 <body class="root">
   <div class="page">
 
-    <section class="popup ">
-      <div class="popup__form">
-        <a class="button" href="#"><img class="popup__button_close" src="./images/Close_Icon.svg" alt="Закрыть"></a>
-        <form class="form">
+    <section class="popup">
+      <div class="popup__container">
+        <button class="popup__button_close" type="image"></button>
+        <form class="form" name="bio-edit">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__bio">
-            <input type="text" class="form__name" id="name" name="name" value="Жак-Ив Кустро" required>
-            <input type="text" class="form__profession" id="profession" name="profession"
-            value="Исследователь океана" required>
+            <input type="text" class="form__item" id="name" name="name" value="Жак-Ив Кустро" required>
+            <input type="text" class="form__item" id="profession" name="profession" value="Исследователь океана"
+              required>
           </fieldset>
           <fieldset class="form__handler">
             <button type="submit" class="form__button">Сохранить</button>
@@ -30,23 +30,25 @@
 
     </section>
 
-
-
     <header class="header">
-      <a href="#"><img class="header__logo" src="./images/Vector.svg" alt="Логотип проекта"></a>
-      <img class="header__line" src="./images/Line.png" alt="Лнния">
+      <a class="header__link" href="#"><img class="header__logo" src="./images/Vector.svg" alt="Логотип проекта"></a>
     </header>
 
-    <main>
+    <main class="content">
       <section class="profile">
-        <img class="profile__avatar" src="./images/Zhak-Iv Kusto.jpg" alt="Аватар профиля">
+        <img class="profile__avatar" src="./images/Zhak-Iv-Kusto.jpg" alt="Аватар профиля">
         <div class="profile__info">
-          <h1 class="profile__name">Жак-Ив Кусто <a class="button" href="#"><div class = "profile__butt"><img class="profile__button_edit" alt="#" src="./images/pen.svg"></div></a>
-          </h1>
+            <div class="profile__container">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <fieldset class="profile__butt">
+                <button type="image" class="profile__button_edit"></button>
+              </fieldset>
+            </div>
           <h2 class="profile__profession">Исследователь океана</h2>
         </div>
-        <a class="button" href="#"><div class = "profile__button"><img class="profile__button_add" alt="Добавить" src="./images/plus.svg"></div></a>
-        
+        <fieldset class="profile__handler">
+          <button type="image" class="profile__button_add"></button>
+        </fieldset>
       </section>
 
       <section class="gallery">
@@ -54,51 +56,47 @@
           <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg" alt="Карачевск">
             <div class="gallery__details">
               <h3 class="gallery__title">Карачевск</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like">
-              </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
             <div class="gallery__details">
               <h3 class="gallery__title">Гора Эльбрус</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like">
-              </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
             <div class="gallery__details">
               <h3 class="gallery__title">Домбай</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like">
-              </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
             <div class="gallery__details">
               <h3 class="gallery__title">Гора Эльбрус</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like">
-            </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
             <div class="gallery__details">
               <h3 class="gallery__title">Домбай</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like">
-              </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg"
               alt="Карачево-Черкессия">
             <div class="gallery__details">
               <h3 class="gallery__title">Карачево-Черкессия</h3>
-              <a class="button" href="#"><img class="gallery__button_like" src="./images/heart-icon.svg" alt="Like"></div>
-              </a>
+              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+            </div>
           </li>
         </ul>
       </section>
+    </main>
 
-      <footer class="footer">
-        <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
-      </footer>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+    </footer>
   </div>
 </body>
 

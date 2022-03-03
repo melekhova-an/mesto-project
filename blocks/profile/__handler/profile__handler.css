@@ -1,0 +1,28 @@
+.profile__handler {
+  border: 1px solid #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  padding: 0px;
+}
+
+.profile__handler:hover::before {
+  opacity: .6;
+  transition: opacity 1s ease-out 0.2s;
+}
+
+@media screen and (min-width: 320px) {
+  .profile__handler {
+    width: 282px;
+    margin: 36px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile__handler {
+    width: 150px;
+    margin: auto 0px auto 244px;
+  }
+}

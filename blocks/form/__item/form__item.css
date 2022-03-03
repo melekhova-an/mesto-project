@@ -1,0 +1,30 @@
+.form__item {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    height: 27px;
+}
+
+.form__item:last-of-type {
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 320px) {
+    .form__item {
+        width: 238px;
+        height: 27px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form__item {
+        width: 358px;
+        height: 27px;
+
+    }
+}

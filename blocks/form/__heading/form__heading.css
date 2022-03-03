@@ -1,26 +1,25 @@
-.form__heading{
-    color: black;
-    margin: 0px auto;
-    font-style: normal;
-    font-weight: 900;
-    
+.form__heading {
+  color: black;
+  margin: 0px auto;
+  font-style: normal;
+  font-weight: 900;
+
 }
 
-@media screen and (min-width: 320px)  {
-    .form__heading{
+@media screen and (min-width: 320px) {
+  .form__heading {
     font-size: 18px;
     line-height: 22px;
     padding-top: 34px;
     width: 238px;
-    }
   }
-  
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .form__heading{
-        font-size: 24px;
-        line-height: 29px;
-        padding-top: 25px;
-        width: 358px;
-    }
+}
+
+@media screen and (min-width: 1024px) {
+  .form__heading {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 25px;
+    width: 358px;
   }
-  
+}
