@@ -1,0 +1,16 @@
+.header__link:hover {
+    opacity: .1;
+    transition: .3s;
+  }
+  
+  @media screen and (min-width: 320px) {
+    .header__link{
+      margin-left: 27px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .header__link {
+      margin: 0px auto;
+    }
+  }

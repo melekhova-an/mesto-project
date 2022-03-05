@@ -14,7 +14,9 @@
 
     <section class="popup">
       <div class="popup__container">
-        <button class="popup__button_close" type="image"></button>
+        <!-- Владимир, пожалуйста, напишите в комментариях разрешение, на котором слетает крестик.
+        Я руками не смогла поймать эту проблему  -->
+        <button class="popup_close" type="button"></button>
         <form class="form" name="bio-edit">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__bio">
@@ -27,28 +29,26 @@
           </fieldset>
         </form>
       </div>
-
     </section>
 
     <header class="header">
-      <a class="header__link" href="#"><img class="header__logo" src="./images/Vector.svg" alt="Логотип проекта"></a>
+      <a class="header__link" href="#">
+        <img class="header__logo" src="./images/Vector.svg" alt="Логотип проекта">
+      </a>
     </header>
 
     <main class="content">
       <section class="profile">
         <img class="profile__avatar" src="./images/Zhak-Iv-Kusto.jpg" alt="Аватар профиля">
         <div class="profile__info">
-            <div class="profile__container">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <fieldset class="profile__butt">
-                <button type="image" class="profile__button_edit"></button>
-              </fieldset>
-            </div>
+          <div class="profile__container">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button type="button" class="profile__edit"></button>
+          </div>
+
           <h2 class="profile__profession">Исследователь океана</h2>
         </div>
-        <fieldset class="profile__handler">
-          <button type="image" class="profile__button_add"></button>
-        </fieldset>
+        <button type="button" class="profile__add"></button>
       </section>
 
       <section class="gallery">
@@ -56,38 +56,38 @@
           <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg" alt="Карачевск">
             <div class="gallery__details">
               <h3 class="gallery__title">Карачевск</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
             <div class="gallery__details">
               <h3 class="gallery__title">Гора Эльбрус</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
             <div class="gallery__details">
               <h3 class="gallery__title">Домбай</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
             <div class="gallery__details">
               <h3 class="gallery__title">Гора Эльбрус</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
             <div class="gallery__details">
               <h3 class="gallery__title">Домбай</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
           <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg"
               alt="Карачево-Черкессия">
             <div class="gallery__details">
               <h3 class="gallery__title">Карачево-Черкессия</h3>
-              <input class="gallery__button_like" src="./images/heart-icon.svg" type="image">
+              <button class="gallery__like" type="button"></button>
             </div>
           </li>
         </ul>

@@ -1,13 +1,15 @@
+.content {
+  margin: 0px auto;
+}
+
 @media screen and (min-width: 320px) {
   .content {
     width: 88vw;
-    margin: 0px auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    margin: 0px auto;
     width: 880px;
   }
 }

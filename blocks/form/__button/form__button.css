@@ -1,31 +1,30 @@
 .form__button {
-    align-items: center;
-    color: #fff;
-    padding: 0px;
-    background-color: black;
-    border: none;
-    margin: 0px;
-    font-style: normal;
-    font-weight: normal;
-    border-radius: 2px;
-    cursor: pointer;
+  align-items: center;
+  color: #fff;
+  padding: 0px;
+  background-color: black;
+  border: none;
+  margin: 0px;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 320px) {
-    .form__button {
-        width: 238px;
-        min-height: 46px;
-        font-size: 14px;
-        line-height: 17px;
-
-    }
+  .form__button {
+    width: 238px;
+    min-height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .form__button {
-        width: 358px;
-        min-height: 50px;
-        font-size: 18px;
-        line-height: 22px;
-    }
+  .form__button {
+    width: 358px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

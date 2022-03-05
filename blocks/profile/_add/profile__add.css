@@ -1,4 +1,10 @@
-.profile__handler {
+.profile__add {
+  margin: 0px auto;
+  background-image: url(./../../../images/plus.svg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-position: center;
   border: 1px solid #fff;
   align-items: center;
   display: flex;
@@ -6,22 +12,25 @@
   flex-direction: row;
   height: 50px;
   padding: 0px;
+  background-repeat: no-repeat;
 }
 
-.profile__handler:hover::before {
+.profile__add:hover {
   opacity: .6;
-  transition: opacity 1s ease-out 0.2s;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 320px) {
-  .profile__handler {
+  .profile__add {
+    background-size: 16px;
     width: 282px;
     margin: 36px 0px 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__handler {
+  .profile__add {
+    background-size: 22px;
     width: 150px;
     margin: auto 0px auto 244px;
   }
