@@ -2,6 +2,8 @@
 
 Mesto – интерактивный сервис для работы с фотографиями
 
+* [Ссылка на GitHub Pages] (https://github.com/melekhova-an/mesto-project/blob/main/index.html)
+
 ### Обзор
 * Figma
 * Технологии
