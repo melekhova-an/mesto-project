@@ -3,37 +3,39 @@
 @import url(./../blocks/page/page.css);
 @import url(./../blocks/root/root.css);
 @import url(./../blocks/header/header.css);
-@import url(./../blocks/footer/footer.css);
-@import url(./../blocks/profile/_add/profile__add.css);
-@import url(./../blocks/profile/_edit/profile__edit.css);
-@import url(./../blocks/button/button.css);
+@import url(./../blocks/header/__logo/header__logo.css);
+
+@import url(./../blocks/profile/__button-add/profile__button-add.css);
+@import url(./../blocks/profile/__button-edit/profile__button-edit.css);
+@import url(./../blocks/profile/__container/profile__container.css);
+@import url(./../blocks/profile/__profession/profile__profession.css);
+@import url(./../blocks/profile/__name/profile__name.css);
+@import url(./../blocks/profile/__info/profile__info.css);
+@import url(./../blocks/profile/profile.css);
+@import url(./../blocks/profile/__avatar/profile__avatar.css);
+
 @import url(./../blocks/gallery/gallery.css);
 @import url(./../blocks/gallery/__element/gallery__element.css);
 @import url(./../blocks/gallery/__elements/gallery__elements.css);
 @import url(./../blocks/gallery/__image/gallery__image.css);
 @import url(./../blocks/gallery/__title/gallery__title.css);
-@import url(./../blocks/footer/__copyright/footer__copyright.css);
-@import url(./../blocks/header/__logo/header__logo.css);
-@import url(./../blocks/profile/profile.css);
-@import url(./../blocks/profile/__avatar/profile__avatar.css);
+@import url(./../blocks/gallery/__button-like/gallery__button-like.css);
 @import url(./../blocks/gallery/__details/gallery__details.css);
-@import url(./../blocks/profile/__profession/profile__profession.css);
-@import url(./../blocks/profile/__name/profile__name.css);
-@import url(./../blocks/profile/__info/profile__info.css);
+
 @import url(./../blocks/form/form.css);
 @import url(./../blocks/form/__bio/form__bio.css);
 @import url(./../blocks/form/__heading/form__heading.css);
-@import url(./../blocks/form/__name/form__name.css);
-@import url(./../blocks/form/__profession/form__profession.css);
-@import url(./../blocks/popup/popup.css);
-@import url(./../blocks/popup/__container/popup__container.css);
 @import url(./../blocks/form/__handler/form__handler.css);
 @import url(./../blocks/form/__button/form__button.css);
-@import url(./../blocks/popup/_opened/popup_opened.css);
-@import url(./../blocks/profile/__handler/profile__handler.css);
-@import url(./../blocks/gallery/_like-active/gallery__active.css);
-@import url(./../blocks/gallery/_like/gallery__like.css);
-@import url(./../blocks/popup/_close/popup_close.css);
 @import url(./../blocks/form/__item/form__item.css);
+
+@import url(./../blocks/popup/popup.css);
+@import url(./../blocks/popup/__container/popup__container.css);
+@import url(./../blocks/popup/__button-opened/popup__button-opened.css);
+@import url(./../blocks/popup/__button-close/popup__button-close.css);
+
 @import url(./../blocks/content/content.css);
-@import url(./../blocks/profile/__container/profile__container.css);
+
+
+@import url(./../blocks/footer/__copyright/footer__copyright.css);
+@import url(./../blocks/footer/footer.css);

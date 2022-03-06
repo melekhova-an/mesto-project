@@ -7,13 +7,13 @@
 @media screen and (min-width: 320px) {
   .popup__container {
     width: 282px;
-    margin: 123px auto;
+    margin: 93px auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .popup__container {
-    width: 470px;
-    margin: 195px auto;
+    width: 514px;
+    margin: 153px auto;
   }
 }
