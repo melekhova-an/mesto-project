@@ -1,0 +1,22 @@
+.gallery__button-trash{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 18px;
+    height: 19px;
+    background-image: url(./../../../images/Trash.svg);
+    background-size: 18px 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+    z-index: 1;
+}
+
+.gallery__button-trash:hover {
+    opacity: .5;
+    transition: 0.3s;
+}

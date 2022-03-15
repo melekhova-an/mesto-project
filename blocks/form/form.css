@@ -1,11 +1,11 @@
-.form {
+.form{
   background-color: #fff;
   border-radius: 10px;
   margin: auto;
 }
 
 @media screen and (min-width: 320px) {
-  .form {
+  .form{
     width: 282px;
     padding-bottom: 25px;
   }

@@ -10,22 +10,60 @@
 </head>
 
 <body class="root">
-  <div class="page">
+  <template id="gallery__element">
+    <div class="gallery__element">
+      <button class="gallery__button-trash" type="button"></button>
+      <img src="" class="gallery__image" alt="">
+      <div class="gallery__details">
+        <h3 class="gallery__title"></h3>
+        <button class="gallery__button-like" type="button"></button>
+      </div>
+    </div>
+  </template>
 
-    <section class="popup">
-      <div class="popup__container">
-        <button class="popup__button-close" type="button"></button>
-        <form class="form" name="bio-edit">
+  <div class="page">
+    <section class="popup-edit">
+      <div class="popup-edit__container">
+        <button class="popup-edit__button-close" type="button"></button>
+        <form id="form-profile" class="form" name="bio-edit">
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__bio">
-            <input type="text" class="form__item" id="name" name="name" value="Жак-Ив Кусто" required>
-            <input type="text" class="form__item" id="profession" name="profession" value="Исследователь океана"
-              required>
+            <input id="item-name" type="text" class="form__item" value="Жак-Ив Кусто" placeholder="Имя" />
+            <input id="item-job" type="text" class="form__item" value="Исследователь океана"
+              placeholder="Деятельность" />
           </fieldset>
           <fieldset class="form__handler">
-            <button type="submit" class="form__button">Сохранить</button>
+            <input type="submit" class="form__button" value="Сохранить" />
           </fieldset>
         </form>
+      </div>
+    </section>
+
+    <section class="popup-add">
+      <div class="popup-add__container">
+        <button class="popup-add__button-close" type="button"></button>
+        <form id="form-add-card" class="form" name="card-add">
+          <h2 class="form__heading">Новое место</h2>
+          <fieldset class="form__bio">
+            <input type="text" id="item-title" class="form__item" name="title" value="" placeholder="Название" />
+            <input type="text" id="item-image-link" class="form__item" name="image-link" value=""
+              placeholder="Ссылка на картинку" />
+          </fieldset>
+          <fieldset class="form__handler">
+            <input type="submit" class="form__button" value="Создать" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section class="popup-image">
+      <div class="popup-image__container">
+        <button class="popup-image__button-close" type="button"></button>
+        <figure class="popup-image__image-container">
+          <img class="popup-image__content"
+            src="" alt="Картинка">
+          <figcaption class="popup-image__caption"></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -40,62 +78,23 @@
         <img class="profile__avatar" src="./images/Zhak-Iv-Kusto.jpg" alt="Аватар профиля">
         <div class="profile__info">
           <div class="profile__container">
-            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <h1 id="first-name" class="profile__name">Жак-Ив Кусто</h1>
             <button type="button" class="profile__button-edit"></button>
           </div>
 
-          <h2 class="profile__profession">Исследователь океана</h2>
+          <h2 id="job-description" class="profile__profession">Исследователь океана</h2>
         </div>
         <button type="button" class="profile__button-add"></button>
       </section>
 
-      <section class="gallery">
-        <ul class="gallery__elements">
-          <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg" alt="Карачевск">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Карачaевск</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-          <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Гора Эльбрус</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-          <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Домбай</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-          <li class="gallery__element"><img class="gallery__image" src="./images/Elbrus.png" alt="Эльбрус">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Гора Эльбрус</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-          <li class="gallery__element"><img class="gallery__image" src="./images/Dombai.png" alt="Домбай">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Домбай</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-          <li class="gallery__element"><img class="gallery__image" src="./images/Karachaevsk.jpg"
-              alt="Карачево-Черкессия">
-            <div class="gallery__details">
-              <h3 class="gallery__title">Карачево-Черкессия</h3>
-              <button class="gallery__button-like" type="button"></button>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <section id="gallery__elements" class="gallery"></section>
     </main>
 
     <footer class="footer">
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
     </footer>
   </div>
+  <script type="text/javascript" src="./pages/script.js"></script>
 </body>
 
 </html>

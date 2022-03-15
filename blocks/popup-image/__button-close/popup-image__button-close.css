@@ -1,34 +1,38 @@
-.popup__button-close {
+.popup-image__button-close {
+  position: absolute;
   padding: 0px;
   background-image: url(./../../../images/Close_Icon.svg);
   background-color: transparent;
   border: none;
   cursor: pointer;
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
-.popup__button-close:hover {
+.popup-image__button-close:hover {
   opacity: .6;
   transition: 0.3s;
 }
 
 @media screen and (min-width: 320px) {
-  .popup__button-close {
+  .popup-image__button-close {
     width: 25px;
-    height: 24px;
+    height: 25px;
     background-size: 25px;
     background-position: center;
-    margin-bottom: 12px;
+    top: -36px;
+    right: 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .popup__button-close {
+  .popup-image__button-close {
     width: 45px;
-    height: 40px;
+    height: 45px;
     background-size: 45px;
-    background-position: right;
-    margin-bottom: 0px;
+    background-position: center;
+    right: -5px;
+    top: -40px
     
   }
 }

@@ -1,19 +1,20 @@
-.popup__container {
+.popup-edit__container {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: flex-end;
 }
 
 @media screen and (min-width: 320px) {
-  .popup__container {
+  .popup-edit__container {
     width: 282px;
-    margin: 93px auto;
+    margin: 123px auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .popup__container {
-    width: 514px;
-    margin: 153px auto;
+  .popup-edit__container {
+    width: 430px;
+    margin: 195px auto;
   }
 }
