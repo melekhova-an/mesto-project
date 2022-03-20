@@ -10,63 +10,9 @@
 </head>
 
 <body class="root">
-  <template id="gallery__element">
-    <div class="gallery__element">
-      <button class="gallery__button-trash" type="button"></button>
-      <img src="" class="gallery__image" alt="">
-      <div class="gallery__details">
-        <h3 class="gallery__title"></h3>
-        <button class="gallery__button-like" type="button"></button>
-      </div>
-    </div>
-  </template>
+
 
   <div class="page">
-    <section class="popup-edit">
-      <div class="popup-edit__container">
-        <button class="popup-edit__button-close" type="button"></button>
-        <form id="form-profile" class="form" name="bio-edit">
-          <h2 class="form__heading">Редактировать профиль</h2>
-          <fieldset class="form__bio">
-            <input id="item-name" type="text" class="form__item" value="Жак-Ив Кусто" placeholder="Имя" />
-            <input id="item-job" type="text" class="form__item" value="Исследователь океана"
-              placeholder="Деятельность" />
-          </fieldset>
-          <fieldset class="form__handler">
-            <input type="submit" class="form__button" value="Сохранить" />
-          </fieldset>
-        </form>
-      </div>
-    </section>
-
-    <section class="popup-add">
-      <div class="popup-add__container">
-        <button class="popup-add__button-close" type="button"></button>
-        <form id="form-add-card" class="form" name="card-add">
-          <h2 class="form__heading">Новое место</h2>
-          <fieldset class="form__bio">
-            <input type="text" id="item-title" class="form__item" name="title" value="" placeholder="Название" />
-            <input type="text" id="item-image-link" class="form__item" name="image-link" value=""
-              placeholder="Ссылка на картинку" />
-          </fieldset>
-          <fieldset class="form__handler">
-            <input type="submit" class="form__button" value="Создать" />
-          </fieldset>
-        </form>
-      </div>
-    </section>
-
-    <section class="popup-image">
-      <div class="popup-image__container">
-        <button class="popup-image__button-close" type="button"></button>
-        <figure class="popup-image__image-container">
-          <img class="popup-image__content"
-            src="" alt="Картинка">
-          <figcaption class="popup-image__caption"></figcaption>
-        </figure>
-      </div>
-    </section>
-
     <header class="header">
       <a class="header__link" href="#">
         <img class="header__logo" src="./images/Vector.svg" alt="Логотип проекта">
@@ -81,7 +27,6 @@
             <h1 id="first-name" class="profile__name">Жак-Ив Кусто</h1>
             <button type="button" class="profile__button-edit"></button>
           </div>
-
           <h2 id="job-description" class="profile__profession">Исследователь океана</h2>
         </div>
         <button type="button" class="profile__button-add"></button>
@@ -94,7 +39,57 @@
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
     </footer>
   </div>
-  <script type="text/javascript" src="./pages/script.js"></script>
+  <template id="gallery__element">
+    <div class="gallery__element">
+      <button class="gallery__button-trash" type="button"></button>
+      <img src="" class="gallery__image" alt="">
+      <div class="gallery__details">
+        <h3 class="gallery__title"></h3>
+        <button class="gallery__button-like" type="button"></button>
+      </div>
+    </div>
+  </template>
+  <section class="popup popup-edit">
+    <div class="popup-edit__container">
+      <button class="popup__button-close popup-edit__button-close" type="button"></button>
+      <form id="form-profile" class="form" name="bio-edit">
+        <h2 class="form__heading">Редактировать профиль</h2>
+        <fieldset class="form__bio">
+          <input id="item-name" type="text" class="form__item" value="Жак-Ив Кусто" placeholder="Имя" />
+          <input id="item-job" type="text" class="form__item" value="Исследователь океана" placeholder="Деятельность" />
+        </fieldset>
+        <fieldset class="form__handler">
+          <input type="submit" class="form__button" value="Сохранить" />
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <section class="popup popup-add">
+    <div class="popup-add__container">
+      <button class="popup__button-close popup-add__button-close" type="button"></button>
+      <form id="form-add-card" class="form" name="card-add">
+        <h2 class="form__heading">Новое место</h2>
+        <fieldset class="form__bio">
+          <input type="text" id="item-title" class="form__item" name="title" value="" placeholder="Название" />
+          <input type="text" id="item-image-link" class="form__item" name="image-link" value=""
+            placeholder="Ссылка на картинку" />
+        </fieldset>
+        <fieldset class="form__handler">
+          <input type="submit" class="form__button" value="Создать" />
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <section class="popup popup-image">
+    <div class="popup-image__container">
+      <button class="popup__button-close popup-image__button-close" type="button"></button>
+      <figure class="popup-image__image-container">
+        <img class="popup-image__content" src="" alt="Картинка">
+        <figcaption class="popup-image__caption"></figcaption>
+      </figure>
+    </div>
+  </section>
+  <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 
 </html>

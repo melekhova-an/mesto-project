@@ -1,8 +1,8 @@
-.gallery__button-like {
+.gallery__button-like_active {
   width: 22px;
   height: 19px;
   margin: 0px 5px 0px 0px;
-  background-image: url(./../../../images/heart-icon.svg);
+  background-image: url(./../../../../images/heart-icon_active.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,11 +11,4 @@
   cursor: pointer;
   padding: 0px;
   flex-shrink: 0;
-
 }
-
-.gallery__button-like:hover {
-  opacity: .5;
-  transition: all 0.3s ease-in-out;
-}
-

@@ -1,6 +1,7 @@
 .gallery__details {
-  width: 246px;
-  margin: 22px 15px 31px 21px;
+  padding: 25px 20px;
+  align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }

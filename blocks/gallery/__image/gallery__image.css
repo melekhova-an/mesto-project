@@ -6,4 +6,5 @@
   border-top-right-radius: 10px;
   align-items: center;
   object-fit: cover;
+  cursor: pointer;
 }
